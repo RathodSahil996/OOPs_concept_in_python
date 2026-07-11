@@ -9,4 +9,4 @@ class Student:
         return self.__password
 
 std1 = Student("ABC","20",9.0,"EnterAnyPassword")
-print(std1.name,std1._age,std1.gpa,std1.get_password())
+print(std1.name,std1.age,std1._gpa,std1.get_password())
