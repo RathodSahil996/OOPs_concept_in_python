@@ -20,7 +20,7 @@ class Cat(Animal):
 
 class Cow(Animal):
 	def make_sound(self):
-		return "Moo!"
+		return "Moo!!"
 
 animal_types = [Dog, Cat, Cow]
 
