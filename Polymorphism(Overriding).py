@@ -1,17 +1,15 @@
-class employee:
-    def get_designation(self):
-        print("designation = employee")
+class Employee:
+    def calculate_bonus(self, salary):
+        return salary * 0.05
 
-class Teacher:
-    def get_designation(self):
-        print("designation = Teacher")
+class Manager(Employee):
+    def calculate_bonus(self, salary):
+        return salary * 0.15
 
-class proffesor:
-    def get_designation(self):
-        print("designation = Proffesor")
-    
+emp = Employee()
+mgr = Manager()
 
-d1 = Teacher()
-d1.get_designation()
-d2 = employee()
-d2.get_designation()
+base_salary = 50000
+
+print(f"Standard Employee Bonus: {emp.calculate_bonus(base_salary)}")
+print(f"Manager Bonus: {mgr.calculate_bonus(base_salary)}")
